@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyFlow — Gestão de Atividades</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Study<span>Flow</span></div>
+    <div class="header-right">
+      <div class="weather-pill" id="weatherPill">
+        <span class="weather-emoji">⏳</span>
+        <span>Carregando...</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-title">Matérias</div>
+      <div class="add-form">
+        <input type="text" id="subjectInput" placeholder="Nova matéria..." maxlength="40">
+        <button class="btn-icon" onclick="addSubject()" title="Adicionar matéria">+</button>
+      </div>
+      <div class="subjects-list" id="subjectsList"></div>
+    </aside>
+
+    <main class="main" id="mainContent">
+      <div class="empty-state">
+        <div class="empty-icon">📚</div>
+        <div class="empty-title">Nenhuma matéria selecionada</div>
+        <div class="empty-sub">Adicione ou selecione uma matéria na barra lateral para começar a gerenciar suas atividades.</div>
+      </div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-icon">🗑️</div>
+      <div class="modal-title" id="modalTitle">Confirmar exclusão</div>
+      <div class="modal-sub" id="modalSub">Tem certeza? Esta ação não pode ser desfeita.</div>
+      <div class="modal-actions">
+        <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
+        <button class="btn-danger" id="modalConfirmBtn">Excluir</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
