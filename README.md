@@ -1,25 +1,25 @@
-# 📚 StudyFlow — Gestão de Atividades Escolares
+#  StudyFlow — Gestão de Atividades Escolares
 
 Aplicação web para organizar matérias e atividades acadêmicas, desenvolvida como desafio prático para a **Digitec**.
 
 ---
 
-## 🖥️ Demonstração
+##  Demonstração
 
 > Abra o arquivo `index.html` em um servidor local para usar a aplicação completa com todas as APIs funcionando.
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
-- **Matérias** — adicione, selecione e remova matérias com cores distintas
+- **Matérias** — adicione, selecione e remova matérias
 - **Atividades** — cadastre atividades dentro de cada matéria com:
   - Nome
   - Categoria (Prova, Estudo, Trabalho, Lista, Seminário, Projeto, Exercício, Outro)
   - Prioridade (Alta, Média, Baixa)
   - Nota (0–10)
   - Data
-- **Média automática** — calculada em tempo real com indicador visual (verde/amarelo/vermelho)
+- **Média automática** — calculada em tempo real
 - **Filtro por categoria** — filtre as atividades por tipo dentro de cada matéria
 - **Estatísticas** — cards com média geral, total de atividades, prioridades altas e status
 - **Remoção com confirmação** — modal de confirmação antes de excluir qualquer item
@@ -27,18 +27,18 @@ Aplicação web para organizar matérias e atividades acadêmicas, desenvolvida 
 
 ---
 
-## 🔌 Integrações com APIs
+##  Integrações com APIs
 
 | API | Uso | Documentação |
 |-----|-----|-------------|
-| [Open-Meteo](https://open-meteo.com/) | Clima em tempo real com base na localização do usuário | Gratuita, sem chave |
-| [Quotable.io](https://quotable.io/) | Frase motivacional aleatória por matéria | Gratuita, sem chave |
+| [Open-Meteo](https://open-meteo.com/) | Clima em tempo real com base na localização do usuário |
+| [BrasilAPI](https://brasilapi.com.br/) | Verificação de feriados nacionais brasileiros 
 
 Ambas as APIs possuem **fallback automático** — se estiverem indisponíveis, a aplicação usa dados locais sem quebrar.
 
 ---
 
-## 🗂️ Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 studyflow/
@@ -50,7 +50,7 @@ studyflow/
 
 ---
 
-## 🚀 Como Rodar
+##  Como Rodar
 
 ### Opção 1 — VS Code (recomendado)
 
@@ -62,10 +62,9 @@ studyflow/
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5** — estrutura semântica
-- **CSS3** — variáveis, Grid, Flexbox, animações, `backdrop-filter`
-- **JavaScript ES6+** — `async/await`, `localStorage`, manipulação de DOM
-- Sem frameworks, sem dependências externas
+- **HTML5**
+- **CSS3** 
+- **JavaScript**
 
 ---
 
@@ -83,7 +82,7 @@ Todos os textos inseridos pelo usuário passam pela função `escHtml()` antes d
 
 ---
 
-## 📱 Responsividade
+##  Responsividade
 
 A aplicação é responsiva para telas menores que **900px**:
 
@@ -94,7 +93,7 @@ A aplicação é responsiva para telas menores que **900px**:
 
 ---
 
-## 🎨 Design
+##  Design
 
 - Tema dark com paleta de cores consistente via variáveis CSS
 - Fontes: **Syne** (títulos) e **DM Sans** (corpo) via Google Fonts
@@ -104,8 +103,4 @@ A aplicação é responsiva para telas menores que **900px**:
 
 ---
 
-## 👨‍💻 Autor
-
 Desenvolvido como desafio prático para processo seletivo da **Digitec**.
-
-Contato: tecnologia@digi.tec.br
