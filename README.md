@@ -58,25 +58,6 @@ studyflow/
 2. Abra a pasta do projeto no VS Code
 3. Clique em **Go Live** na barra inferior
 4. Acesse `http://localhost:5500`
-
-### Opção 2 — Node.js
-
-```bash
-npx serve .
-```
-
-Acesse `http://localhost:3000`
-
-### Opção 3 — Python
-
-```bash
-python -m http.server 8000
-```
-
-Acesse `http://localhost:8000`
-
-> ⚠️ **Não abra o `index.html` diretamente** pelo explorador de arquivos (`file://`). As APIs de geolocalização e fetch requerem um servidor HTTP para funcionar corretamente.
-
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -87,31 +68,6 @@ Acesse `http://localhost:8000`
 - Sem frameworks, sem dependências externas
 
 ---
-
-## 📁 Detalhes Técnicos
-
-### Estrutura do Estado (localStorage)
-
-```js
-{
-  subjects: [
-    { id: "s_1", name: "Matemática", colorIdx: 0 }
-  ],
-  activities: {
-    "s_1": [
-      {
-        id: "a_1",
-        name: "Prova Bimestral",
-        category: "Prova",
-        priority: "Alta",
-        grade: 8.5,
-        date: "2025-06-10"
-      }
-    ]
-  },
-  nextId: 3
-}
-```
 
 ### Cálculo de Média
 
