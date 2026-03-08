@@ -82,17 +82,6 @@ Todos os textos inseridos pelo usuário passam pela função `escHtml()` antes d
 
 ---
 
-##  Responsividade
-
-A aplicação é responsiva para telas menores que **900px**:
-
-- Layout de duas colunas passa para uma coluna
-- Sidebar deixa de ser fixa e entra no fluxo normal
-- Cards de estatísticas passam de 4 para 2 colunas
-- Formulários empilham os campos verticalmente
-
----
-
 ##  Design
 
 - Tema dark com paleta de cores consistente via variáveis CSS
