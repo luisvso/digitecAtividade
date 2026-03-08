@@ -34,20 +34,6 @@ Aplicação web para organizar matérias e atividades acadêmicas, desenvolvida 
 | [Open-Meteo](https://open-meteo.com/) | Clima em tempo real com base na localização do usuário |
 | [BrasilAPI](https://brasilapi.com.br/) | Verificação de feriados nacionais brasileiros 
 
-Ambas as APIs possuem **fallback automático** — se estiverem indisponíveis, a aplicação usa dados locais sem quebrar.
-
----
-
-##  Estrutura do Projeto
-
-```
-studyflow/
-├── index.html   # Estrutura HTML da aplicação
-├── style.css    # Estilos e tema visual
-├── script.js    # Lógica, estado e integrações
-└── README.md    # Este arquivo
-```
-
 ---
 
 ##  Como Rodar
