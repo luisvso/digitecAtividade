@@ -6,7 +6,7 @@ Aplicação web para organizar matérias e atividades acadêmicas, desenvolvida 
 
 ##  Demonstração
 
-> Abra o arquivo `index.html` em um servidor local para usar a aplicação completa com todas as APIs funcionando.
+[![Assista o vídeo](https://img.youtube.com/vi/Gjc83oGHwoY/0.jpg)](https://www.youtube.com/watch?v=Gjc83oGHwoY)
 
 ---
 
