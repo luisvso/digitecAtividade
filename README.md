@@ -29,8 +29,8 @@ Aplicação web para organizar matérias e atividades acadêmicas, desenvolvida 
 
 ##  Integrações com APIs
 
-| API | Uso | Documentação |
-|-----|-----|-------------|
+| API | Uso 
+|-----|-----
 | [Open-Meteo](https://open-meteo.com/) | Clima em tempo real com base na localização do usuário |
 | [BrasilAPI](https://brasilapi.com.br/) | Verificação de feriados nacionais brasileiros 
 
