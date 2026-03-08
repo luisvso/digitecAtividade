@@ -222,14 +222,6 @@ function renderMain() {
       </div>
     </div>
 
-    <div class="quote-card" id="quoteCard">
-      <div class="quote-mark">"</div>
-      <div>
-        <div class="quote-text" id="quoteText">Carregando frase motivacional...</div>
-        <div class="quote-author" id="quoteAuthor"></div>
-      </div>
-    </div>
-
     <div class="add-activity-section">
       <div class="section-head">
         <div class="section-head-title">
@@ -292,7 +284,6 @@ function renderMain() {
       </div>
     </div>`;
 
-    loadQuote();
 }
 
 function renderActivities(activities) {
@@ -452,30 +443,6 @@ function weatherDesc(code) {
     return 'Variável';
 }
 
-const FALLBACK_QUOTES = [
-    { q: 'A educação é a arma mais poderosa que você pode usar para mudar o mundo.', a: 'Nelson Mandela' },
-    { q: 'O sucesso é a soma de pequenos esforços repetidos dia após dia.', a: 'Robert Collier' },
-    { q: 'A inteligência é a capacidade de se adaptar à mudança.', a: 'Stephen Hawking' },
-    { q: 'Invista em si mesmo. Seu aprendizado é seu ativo mais valioso.', a: 'Benjamin Franklin' },
-    { q: 'Cada especialista foi um dia um iniciante.', a: 'Helen Hayes' },
-];
-
-async function loadQuote() {
-    try {
-        const res = await fetch('https://api.quotable.io/random?tags=education|inspirational&maxLength=200');
-        if (res.ok) {
-            const data = await res.json();
-            document.getElementById('quoteText').textContent = data.content;
-            document.getElementById('quoteAuthor').textContent = '— ' + data.author;
-            return;
-        }
-    } catch { }
-
-    const quote = FALLBACK_QUOTES[Math.floor(Math.random() * FALLBACK_QUOTES.length)];
-    document.getElementById('quoteText').textContent = quote.q;
-    document.getElementById('quoteAuthor').textContent = '— ' + quote.a;
-}
-
 async function fetchFeriados() {
   try {
     const ano = new Date().getFullYear();
@@ -497,5 +464,4 @@ document.getElementById('subjectInput').addEventListener('keydown', e => {
 
 renderSidebar();
 loadWeather();
-loadQuote();
 fetchFeriados();
